@@ -1,0 +1,32 @@
+<!--<FrameLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:id="@+id/newsTitleLayout"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/newsTitleFrag"-->
+<!--        android:name="site.ylan.k03_fragment.fragment.NewsTitleFragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" />-->
+<!--</FrameLayout>-->
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/newsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/newsTitleLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+        <fragment
+            android:id="@+id/newsTitleFrag"
+            android:name="site.ylan.k03_fragment.fragment.NewsTitleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+<!--    </FrameLayout>-->
+
+</FrameLayout>

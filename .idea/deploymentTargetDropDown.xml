@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="deploymentTargetDropDown">
+    <value>
+      <entry key="app">
+        <State />
+      </entry>
+      <entry key="app.k01-activity">
+        <State />
+      </entry>
+      <entry key="k01-activity">
+        <State />
+      </entry>
+      <entry key="k02-ui">
+        <State />
+      </entry>
+      <entry key="k03-fragment">
+        <State>
+          <runningDeviceTargetSelectedWithDropDown>
+            <Target>
+              <type value="RUNNING_DEVICE_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="$USER_HOME$/.android/avd/Pixel_C_API_30.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </runningDeviceTargetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-04-19T08:56:38.518486Z" />
+        </State>
+      </entry>
+      <entry key="k10-service">
+        <State />
+      </entry>
+    </value>
+  </component>
+</project>
