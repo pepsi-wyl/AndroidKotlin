@@ -29,12 +29,15 @@ class SpinKitActivity : BaseActivity<ActivitySpinKitBinding>() {
         window.setBackgroundDrawableResource(R.color.black)
 
         // 进度条
-        progressBar = binding.spinKit
-        val doubleBounce: Sprite = DoubleBounce()
-        val fadingCircle: Sprite = FadingCircle()
-        val wave: Sprite = Wave()
-        progressBar.indeterminateDrawable = wave
-        progressBar.visibility = View.VISIBLE
+//        progressBar = binding.spinKit
+//        val doubleBounce: Sprite = DoubleBounce()
+//        val fadingCircle: Sprite = FadingCircle()
+//        val wave: Sprite = Wave()
+//        progressBar.indeterminateDrawable = wave
+//        progressBar.visibility = View.VISIBLE
+        // 进度条
+        val avi = binding.avi
+        avi.show();
 
     }
 
