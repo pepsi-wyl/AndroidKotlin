@@ -8,6 +8,9 @@
       <entry key="app.k01-activity">
         <State />
       </entry>
+      <entry key="app.k20-constraintlayout">
+        <State />
+      </entry>
       <entry key="k01-activity">
         <State />
       </entry>
@@ -18,6 +21,9 @@
         <State />
       </entry>
       <entry key="k06-broadcast">
+        <State />
+      </entry>
+      <entry key="k07-filedb">
         <State />
       </entry>
       <entry key="k10-service">

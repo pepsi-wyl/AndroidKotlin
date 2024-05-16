@@ -1,3 +1,5 @@
+import java.net.URI
+
 pluginManagement {
     repositories {
         google()
@@ -10,6 +12,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url= URI("https://jitpack.io") }
     }
 }
 
@@ -21,3 +24,5 @@ include(":k02-ui")
 include(":k03-fragment")
 include(":k11-net")
 include(":k06-broadcast")
+include(":k07-filedb")
+include(":app:k20-constraintlayout")
