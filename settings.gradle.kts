@@ -1,5 +1,8 @@
 import java.net.URI
 
+include(":app:k21-glide")
+
+
 pluginManagement {
     repositories {
         google()
