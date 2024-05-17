@@ -1,5 +1,8 @@
 import java.net.URI
 
+include(":app:k23-orientation")
+
+
 include(":app:k22-localization")
 
 
