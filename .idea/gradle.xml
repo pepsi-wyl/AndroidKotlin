@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/app/k20-constraintlayout" />
             <option value="$PROJECT_DIR$/app/k21-glide" />
+            <option value="$PROJECT_DIR$/app/k22-localization" />
             <option value="$PROJECT_DIR$/k01-activity" />
             <option value="$PROJECT_DIR$/k02-ui" />
             <option value="$PROJECT_DIR$/k03-fragment" />

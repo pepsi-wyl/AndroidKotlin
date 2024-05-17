@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">k22-本地化</string>
+    <string name="title">欢迎</string>
+    <string name="message">这是一条信息</string>
+    <string name="btn_message">按钮</string>
+</resources>

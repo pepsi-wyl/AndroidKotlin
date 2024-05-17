@@ -1,5 +1,8 @@
 import java.net.URI
 
+include(":app:k22-localization")
+
+
 include(":app:k21-glide")
 
 
