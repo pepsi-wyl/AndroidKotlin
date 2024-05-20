@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="teamTextSize">20sp</dimen>
+    <dimen name="scoreTextSize">80sp</dimen>
+</resources>

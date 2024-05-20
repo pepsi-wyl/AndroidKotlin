@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">k24-score</string>
+    <string name="textview1">Team A</string>
+    <string name="textview2">Team B</string>
+    <string name="score">0</string>
+    <string name="button1">+1</string>
+    <string name="button2">+2</string>
+    <string name="button3">+3</string>
+    <string name="imageButton1">Undo</string>
+    <string name="imageButton2">Reset</string>
+</resources>

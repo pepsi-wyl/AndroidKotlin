@@ -1,5 +1,8 @@
 import java.net.URI
 
+include(":app:k24-score")
+
+
 include(":app:k23-orientation")
 
 
