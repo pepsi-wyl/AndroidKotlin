@@ -13,6 +13,8 @@ class ViewModelActivity : AppCompatActivity() {
         ActivityViewModelBinding.inflate(layoutInflater)
     }
 
+    private lateinit var viewModel: NumberViewModel
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
@@ -20,11 +22,11 @@ class ViewModelActivity : AppCompatActivity() {
         binding.textView.text = "0"
 
         // ViewModel
-        val viewModel = ViewModelProvider(this)[NumberViewModel::class.java]
+        viewModel = ViewModelProvider(this)[NumberViewModel::class.java]
 
-        viewModel.number.observe(this, Observer {
+        viewModel.number.observe(this) {
             binding.textView.text = it.toString()
-        })
+        }
 
         binding.button1.setOnClickListener {
             viewModel.modifyNumber(1)
