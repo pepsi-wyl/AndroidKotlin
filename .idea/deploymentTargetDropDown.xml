@@ -23,6 +23,22 @@
       <entry key="app.k24-score">
         <State />
       </entry>
+      <entry key="app.k25-viewpager2">
+        <State>
+          <runningDeviceTargetSelectedWithDropDown>
+            <Target>
+              <type value="RUNNING_DEVICE_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="SERIAL_NUMBER" />
+                  <value value="79URX19306004039" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </runningDeviceTargetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-05-21T06:36:29.076161Z" />
+        </State>
+      </entry>
       <entry key="k01-activity">
         <State />
       </entry>

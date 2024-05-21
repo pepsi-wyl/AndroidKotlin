@@ -1,5 +1,8 @@
 import java.net.URI
 
+include(":app:k25-viewpager2")
+
+
 include(":app:k24-score")
 
 
