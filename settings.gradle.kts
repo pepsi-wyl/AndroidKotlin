@@ -1,5 +1,8 @@
 import java.net.URI
 
+include(":app:k26-bottomnavigation")
+
+
 include(":app:k25-viewpager2")
 
 
