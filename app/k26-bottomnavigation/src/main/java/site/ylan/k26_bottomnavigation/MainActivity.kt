@@ -19,9 +19,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
+        val navController = Navigation.findNavController(binding.fragmentContainerView)
         NavigationUI.setupWithNavController(
             binding.bottomNavigationView,
-            Navigation.findNavController(binding.fragmentContainerView)
+            navController
         )
     }
 }
