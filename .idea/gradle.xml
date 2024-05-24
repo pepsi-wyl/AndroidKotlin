@@ -24,6 +24,7 @@
             <option value="$PROJECT_DIR$/k07-filedb" />
             <option value="$PROJECT_DIR$/k10-service" />
             <option value="$PROJECT_DIR$/k11-net" />
+            <option value="$PROJECT_DIR$/k12-materialdesign" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />

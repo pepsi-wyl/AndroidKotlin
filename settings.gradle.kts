@@ -1,5 +1,8 @@
 import java.net.URI
 
+include(":k12-materialdesign")
+
+
 include(":app:k26-bottomnavigation")
 
 
