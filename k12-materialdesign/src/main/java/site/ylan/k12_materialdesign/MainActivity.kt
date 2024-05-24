@@ -13,6 +13,9 @@ import site.ylan.k12_materialdesign.adapter.FruitAdapter
 import site.ylan.k12_materialdesign.databinding.ActivityMainBinding
 import site.ylan.k12_materialdesign.model.Fruit
 import site.ylan.k12_materialdesign.model.FruitDate
+import site.ylan.k12_materialdesign.utils.SnackbarUtils
+import site.ylan.k12_materialdesign.utils.SnackbarUtils.Companion.showSnackbar
+import site.ylan.k12_materialdesign.utils.showToastShort
 import kotlin.concurrent.thread
 
 class MainActivity : AppCompatActivity() {
@@ -46,11 +49,14 @@ class MainActivity : AppCompatActivity() {
 
         // FloatingActionButton
         binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Data deleted", Snackbar.LENGTH_SHORT)
-                .setAction("Undo") {
-                    Toast.makeText(this, "Data restored", Toast.LENGTH_SHORT).show()
-                }
-                .show()
+//            Snackbar.make(view, "Data deleted", Snackbar.LENGTH_SHORT)
+//                .setAction("Undo") {
+//                    Toast.makeText(this, "Data restored", Toast.LENGTH_SHORT).show()
+//                }
+//                .show()
+            view.showSnackbar("Data deleted", "Undo") {
+                "Data restored".showToastShort(this)
+            }
         }
 
         // RecyclerView
@@ -89,26 +95,10 @@ class MainActivity : AppCompatActivity() {
                 binding.drawerLayout.openDrawer(GravityCompat.START)
             }
 
-            R.id.backup -> {
-                Toast.makeText(
-                    this, "You clicked Backup",
-                    Toast.LENGTH_SHORT
-                ).show()
-            }
+            R.id.backup -> "You clicked Backup".showToastShort(this)
+            R.id.delete -> "You clicked Delete".showToastShort(this)
+            R.id.settings -> "You clicked Settings".showToastShort(this)
 
-            R.id.delete -> {
-                Toast.makeText(
-                    this, "You clicked Delete",
-                    Toast.LENGTH_SHORT
-                ).show()
-            }
-
-            R.id.settings -> {
-                Toast.makeText(
-                    this, "You clicked Settings",
-                    Toast.LENGTH_SHORT
-                ).show()
-            }
         }
         return true
     }
