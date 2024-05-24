@@ -37,7 +37,7 @@ class FruitAdapter(private val context: Context) :
             ViewHolder(FruitItemBinding.inflate(LayoutInflater.from(context), parent, false))
 
         viewHolder.itemView.setOnClickListener {
-            val fruit = fruitList[viewHolder.adapterPosition]
+            val fruit = fruitList[viewHolder.bindingAdapterPosition]
             val bundle = Bundle().apply {
                 putString(FruitActivity.FRUIT_NAME, fruit.name)
                 putInt(FruitActivity.FRUIT_IMAGE_ID, fruit.imageId)
