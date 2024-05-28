@@ -1,5 +1,8 @@
 import java.net.URI
 
+include(":app:k27-lottie")
+
+
 include(":k12-materialdesign")
 
 
