@@ -1,22 +1,23 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="180dp"
-    android:padding="10dp"
-    android:background="@color/lightseagreen">
+    android:background="@color/palevioletred"
+    android:padding="20dp">
 
+    <!--CircleImageView用于将图片圆形化的控件-->
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/icon"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:src="@drawable/nav_icon"
-        android:layout_centerInParent="true" />
+        android:layout_centerInParent="true"
+        android:src="@drawable/nav_icon" />
 
     <TextView
         android:id="@+id/user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@id/email"
-        android:text="Ylan"
+        android:text="Name：Ylan"
         android:textColor="@color/ivory"
         android:textSize="14sp" />
 
@@ -25,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="pepsiwyl@gmail.com"
+        android:text="Email：pepsiwyl@gmail.com"
         android:textColor="@color/ivory"
         android:textSize="14sp" />
 

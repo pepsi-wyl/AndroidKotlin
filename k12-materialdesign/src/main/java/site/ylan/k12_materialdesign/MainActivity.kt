@@ -41,8 +41,10 @@ class MainActivity : AppCompatActivity() {
 
         // NavigationView
         binding.navView.let {
+            // 默认选中的菜单项
             it.setCheckedItem(R.id.navCall)
             it.setNavigationItemSelectedListener {
+                // 调用DrawerLayout的closeDrawers()方法将滑动菜单关闭，并返回true表示此事件已被处理
                 binding.drawerLayout.closeDrawers()
                 true
             }

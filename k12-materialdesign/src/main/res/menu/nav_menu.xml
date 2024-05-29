@@ -1,5 +1,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--
+    group表示一个组
+    checkableBehavior指定为single表示组中的所有菜单项只能单选
+    -->
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/navCall"
