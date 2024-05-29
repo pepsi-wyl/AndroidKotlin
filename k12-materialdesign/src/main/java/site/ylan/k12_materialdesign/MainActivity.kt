@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.let {
             it.setDisplayHomeAsUpEnabled(true)
             it.setHomeAsUpIndicator(R.drawable.ic_menu)
+            it.setTitle(R.string.tool_bar_title)
         }
 
         // NavigationView
