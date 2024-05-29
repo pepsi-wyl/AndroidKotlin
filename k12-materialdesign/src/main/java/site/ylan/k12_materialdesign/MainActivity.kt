@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        // FloatingActionButton
+        // FloatingActionButton FloatingActionButton是CoordinatorLayout中的子控件,事件就能被监听到
         binding.fab.setOnClickListener { view ->
 //            Snackbar.make(view, "Data deleted", Snackbar.LENGTH_SHORT)
 //                .setAction("Undo") {
