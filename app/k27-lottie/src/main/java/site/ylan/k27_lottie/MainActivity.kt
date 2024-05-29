@@ -11,9 +11,11 @@ class MainActivity : AppCompatActivity() {
 
     private val binding: ActivityMainBinding by lazy { ActivityMainBinding.inflate(layoutInflater) }
 
-    companion object{
-        fun startMainActivity(context: Context){
-            context.startActivity(Intent(context, MainActivity::class.java))
+    companion object {
+        fun startMainActivity(context: Context) {
+            context.apply {
+                startActivity(Intent(this, MainActivity::class.java))
+            }
         }
     }
 
