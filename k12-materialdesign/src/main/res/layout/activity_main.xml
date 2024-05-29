@@ -36,6 +36,7 @@
                 app:theme="@style/ToolBarTheme" />
         </com.google.android.material.appbar.AppBarLayout>
 
+        <!--appbar_scrolling_view_behavior 布局行为-->
         <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
             android:id="@+id/swipeRefresh"
             android:layout_width="match_parent"

@@ -112,8 +112,11 @@ class MainActivity : AppCompatActivity() {
     private fun refreshFruits() {
         thread {
             Thread.sleep(2000)
+            // runOnUiThread()方法将线程切换回主线程
             runOnUiThread {
+                // 刷新数据
                 adapter.setFruitList(FruitDate.getFruitList())
+                // 刷新结束
                 binding.swipeRefresh.isRefreshing = false
             }
         }
