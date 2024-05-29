@@ -34,8 +34,8 @@ class MainActivity : AppCompatActivity() {
         // Toolbar
         setSupportActionBar(binding.toolbar)
         supportActionBar?.let {
-            it.setDisplayHomeAsUpEnabled(true)
-            it.setHomeAsUpIndicator(R.drawable.ic_menu)
+            it.setDisplayHomeAsUpEnabled(true)           // 显示导航按钮
+            it.setHomeAsUpIndicator(R.drawable.ic_menu)  // 设置导航按钮图标
             it.setTitle(R.string.tool_bar_title)
         }
 
@@ -92,7 +92,9 @@ class MainActivity : AppCompatActivity() {
      */
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
+            // 处理导航按钮的点击事件
             android.R.id.home -> {
+                // gravity GravityCompat.START
                 binding.drawerLayout.openDrawer(GravityCompat.START)
             }
 

@@ -50,6 +50,12 @@
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <!--滑动菜单中显示的内容-->
+    <!--
+    layout_gravity这个属性必须指定，需要告诉DrawerLayout滑动菜单的位置
+        left表示滑动菜单在左边
+        right表示滑动菜单在右边
+        start表示根据系统语言进行判断，如果系统语言是从左往右的，比如英语、汉语，滑动菜单就在左边，如果系统语言是从右往左的，比如阿拉伯语，滑动菜单就在右边
+    -->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navView"
         android:layout_width="match_parent"
