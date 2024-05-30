@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import androidx.core.content.contentValuesOf
 import site.ylan.k07_filedb.R
 import site.ylan.k07_filedb.db.BookDataBaseHelper
 import java.lang.NullPointerException
@@ -124,14 +125,19 @@ class DbActivity : AppCompatActivity() {
 //                throw NullPointerException()
 
                 // 2。插入数据
-                writableDatabase.insert("Book", null,
-                    ContentValues().apply {
-                        put("name", "Game of Thrones")
-                        put("author", "George Martin")
-                        put("pages", 720)
-                        put("price", 20.85)
-                    }
-                )
+//                writableDatabase.insert("Book", null,
+//                    ContentValues().apply {
+//                        put("name", "Game of Thrones")
+//                        put("author", "George Martin")
+//                        put("pages", 720)
+//                        put("price", 20.85)
+//                    }
+//                )
+                // Google提供的KTX扩展库中的ContentValues简化用法
+                val values = contentValuesOf("name" to "Game of Thrones", "author" to "George Martin",
+                    "pages" to 720, "price" to 20.85)
+                writableDatabase.insert("Book", null, values)
+
                 // 3。提交事务
                 writableDatabase.setTransactionSuccessful()
             } catch (e: NullPointerException) {

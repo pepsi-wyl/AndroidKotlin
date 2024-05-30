@@ -1,9 +1,11 @@
 package site.ylan.k07_filedb.activity
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import androidx.core.content.edit
 import site.ylan.k07_filedb.R
 
 class SharedPreferencesActivity : AppCompatActivity() {
@@ -28,6 +30,12 @@ class SharedPreferencesActivity : AppCompatActivity() {
             editor.putString("key", "value")
             // 提交数据，保存更改
             editor.apply()
+
+            // Google提供的KTX扩展库中的SharedPreferences简化用法
+            getSharedPreferences("data", Context.MODE_PRIVATE).edit {
+                putString("key1", "value1")
+            }
+
         }
 
         restoreButton.setOnClickListener {
