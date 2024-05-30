@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Android 9.0开始，使用前台Service必须进行权限声明-->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
         android:allowBackup="true"
@@ -10,8 +13,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidKotlin">
 
+        <!--
+        Exported属性 是否将这个Service暴露给外部其他程序访问
+        Enabled属性 是否启用这个Service
+        -->
         <service
             android:name=".MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".MyIntentService"
             android:enabled="true"
             android:exported="true" />
 

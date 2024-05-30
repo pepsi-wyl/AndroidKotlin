@@ -12,6 +12,7 @@ import kotlin.concurrent.thread
 
 /**
  * 在子线程更新UI
+ * Android异步消息处理
  */
 
 class MainActivity : AppCompatActivity() {
@@ -43,7 +44,7 @@ class MainActivity : AppCompatActivity() {
 
         changeTextBtn?.setOnClickListener{
             thread {
-                // 创建Message
+                // 创建Message（android.os.Message）对象
                 val message = Message()
                 // 指定what
                 message.what = updateTextCode
