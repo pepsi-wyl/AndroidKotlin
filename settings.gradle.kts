@@ -1,5 +1,8 @@
 import java.net.URI
 
+include(":k09-medil")
+
+
 include(":app:k27-lottie")
 
 
