@@ -9,18 +9,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidKotlin">
 
-        <!--FileProvider-->
+        <!-- FileProvider -->
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="site.ylan.k09_medil.CameraAlbumActivity.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
-            <!--指定Uri的共享路径，引用@xml/file_paths资源-->
+            <!-- 指定Uri的共享路径，引用@xml/file_paths资源 -->
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
 
+        <activity
+            android:name=".PlayAudioActivity"
+            android:exported="false" />
         <activity
             android:name=".CameraAlbumActivity"
             android:exported="false" />

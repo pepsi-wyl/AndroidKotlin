@@ -21,5 +21,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // 启动PlayAudioActivity
+        binging.playAudio.setOnClickListener {
+            val intent = Intent(this, PlayAudioActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
