@@ -9,6 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidKotlin">
+
+        <!--Activity-->
+        <activity
+            android:name=".Activitys.SecondActivitySerializable"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.SecondActivityParcelable"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.FirstActivity"
+            android:exported="false" />
+        <!--MainActivity-->
         <activity
             android:name=".Activitys.MainActivity"
             android:exported="true">
