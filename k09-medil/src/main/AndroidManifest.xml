@@ -8,13 +8,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidKotlin">
-
+        <activity
+            android:name=".PlayVideoActivity"
+            android:exported="false" />
         <!-- FileProvider -->
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="site.ylan.k09_medil.CameraAlbumActivity.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
+
             <!-- 指定Uri的共享路径，引用@xml/file_paths资源 -->
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"

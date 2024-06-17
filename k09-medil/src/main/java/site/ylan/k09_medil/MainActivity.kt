@@ -26,5 +26,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, PlayAudioActivity::class.java)
             startActivity(intent)
         }
+
+        // 启动PlayVideoActivity
+        binging.playVideo.setOnClickListener {
+            val intent = Intent(this, PlayVideoActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
