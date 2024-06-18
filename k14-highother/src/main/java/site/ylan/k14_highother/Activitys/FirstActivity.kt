@@ -1,9 +1,8 @@
 package site.ylan.k14_highother.Activitys
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import site.ylan.k14_highother.Application.MainApplication
+import site.ylan.k14_highother.startActivity
 import site.ylan.k14_highother.databinding.ActivityFirstBinding
 import site.ylan.k14_highother.model.bean.PersonParcelable
 import site.ylan.k14_highother.model.bean.PersonSerializable
@@ -11,8 +10,9 @@ import site.ylan.k14_highother.model.bean.PersonSerializable
 class FirstActivity : AppCompatActivity() {
 
     companion object {
-        val PERSON_SERIALIZABLE = "person_serializable"
-        var PERSON_PARCELABLE = "person_parcelable"
+        fun startActivity() {
+            startActivity<FirstActivity>()
+        }
     }
 
     // ActivityFirstBinding
@@ -30,11 +30,7 @@ class FirstActivity : AppCompatActivity() {
             val personSerializable = PersonSerializable()
             personSerializable.name = "Ylan-Serializable"
             personSerializable.age = 23
-            // Intent跳转
-            val intent =
-                Intent(MainApplication.globeContext, SecondActivitySerializable::class.java)
-            intent.putExtra(PERSON_SERIALIZABLE, personSerializable)
-            startActivity(intent)
+            SecondActivitySerializable.startActivity(personSerializable)
         }
 
         // 跳转到SecondActivity Parcelable传递数据
@@ -43,11 +39,7 @@ class FirstActivity : AppCompatActivity() {
             val personParcelable = PersonParcelable()
             personParcelable.name = "Ylan-Parcelable"
             personParcelable.age = 23
-            // Intent跳转
-            val intent =
-                Intent(MainApplication.globeContext, SecondActivityParcelable::class.java)
-            intent.putExtra(PERSON_PARCELABLE, personParcelable)
-            startActivity(intent)
+            SecondActivityParcelable.startActivity(this, personParcelable)
         }
     }
 }
