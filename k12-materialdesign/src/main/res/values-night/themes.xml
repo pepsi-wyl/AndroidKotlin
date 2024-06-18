@@ -1,6 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="Theme.AndroidKotlin" parent="Theme.MaterialComponents.Light.NoActionBar">
-
+    <!--引入了Material库之后，还需要将res/values/styles.xml文件中AppTheme的parent主题改成Theme.MaterialComponents.Light.NoActionBar，否则可能会遇到崩溃问题-->
+    <style name="Theme.AndroidKotlin" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:colorPrimaryDark">@color/black</item>
+        <item name="android:textColorPrimary">@color/gray_cc</item>
+        <item name="android:colorPrimary">@color/lightseagreen</item>
+        <item name="android:colorAccent">@color/palevioletred</item>
     </style>
+
+    <style name="FruitActivityTheme" parent="Theme.AndroidKotlin">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
 </resources>
