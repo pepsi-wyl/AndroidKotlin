@@ -9,4 +9,7 @@ object Constants {
     // BaseActivity method
     const val BINDING_METHOD: String = "inflate"
 
+    // 彩云平台 Token
+    const val WEATHER_TOKEN = "JFjz6EKZtKYqSeVB"
+
 }
