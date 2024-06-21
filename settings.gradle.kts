@@ -1,43 +1,10 @@
 import java.net.URI
 
-include(":sunnyweather")
-
-
-include(":k14-highother")
-
-
-include(":k09-medil")
-
-
-include(":app:k27-lottie")
-
-
-include(":k12-materialdesign")
-
-
-include(":app:k26-bottomnavigation")
-
-
-include(":app:k25-viewpager2")
-
-
-include(":app:k24-score")
-
-
-include(":app:k23-orientation")
-
-
-include(":app:k22-localization")
-
-
-include(":app:k21-glide")
-
-
 pluginManagement {
     repositories {
+        gradlePluginPortal()
         google()
         mavenCentral()
-        gradlePluginPortal()
     }
 }
 dependencyResolutionManagement {
@@ -45,9 +12,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven { url= URI("https://jitpack.io") }
-        maven { url= URI("https://maven.aliyun.com/repository/public") }
-        maven { url= URI("https://maven.aliyun.com/repository/google") }
+        maven { url = URI("https://jitpack.io") }
+        maven { url = URI("https://maven.aliyun.com/repository/public") }
+        maven { url = URI("https://maven.aliyun.com/repository/google") }
     }
 }
 
@@ -61,3 +28,15 @@ include(":k11-net")
 include(":k06-broadcast")
 include(":k07-filedb")
 include(":app:k20-constraintlayout")
+include(":app:k28-room")
+include(":sunnyweather")
+include(":k14-highother")
+include(":k09-medil")
+include(":app:k27-lottie")
+include(":k12-materialdesign")
+include(":app:k26-bottomnavigation")
+include(":app:k25-viewpager2")
+include(":app:k24-score")
+include(":app:k23-orientation")
+include(":app:k22-localization")
+include(":app:k21-glide")
