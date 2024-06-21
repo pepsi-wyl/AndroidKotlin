@@ -1,6 +1,7 @@
 package site.ylan.sunnyweather.common.utils
 
 import android.util.Log
+import site.ylan.sunnyweather.BuildConfig
 
 /**
  * 日志工具类
@@ -16,7 +17,7 @@ object LogUtil {
     private const val ERROR = 5
 
     // 默认日志级别
-    private var level = VERBOSE
+    private var level = BuildConfig.LOG_LEVEL
 
     /**
      * Verbose

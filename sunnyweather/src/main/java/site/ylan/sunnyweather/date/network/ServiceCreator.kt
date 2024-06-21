@@ -2,7 +2,7 @@ package site.ylan.sunnyweather.date.network
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import site.ylan.sunnyweather.common.Constants.BASE_URL
+import site.ylan.sunnyweather.common.Constants.WEATHER_BASE_URL
 
 /**
  * ServiceCreator
@@ -15,7 +15,7 @@ object ServiceCreator {
 
     // Retrofit
     private val retrofit: Retrofit = Retrofit.Builder()
-        .baseUrl(BASE_URL)
+        .baseUrl(WEATHER_BASE_URL)
         .addConverterFactory(gsonConverterFactory)
         .build()
 
