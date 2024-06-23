@@ -7,8 +7,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import site.ylan.sunnyweather.R
-import site.ylan.sunnyweather.databinding.PlaceItemBinding
-import site.ylan.sunnyweather.date.model.Place
+import site.ylan.sunnyweather.date.model.PlaceResponse.Place
 
 /**
  * PlaceAdapter

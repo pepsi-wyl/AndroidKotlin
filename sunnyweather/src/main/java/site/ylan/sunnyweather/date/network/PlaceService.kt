@@ -16,7 +16,7 @@ interface PlaceService {
     /**
      * searchPlaces
      */
-    @GET("v2/place")
+    @GET("/v2/place")
     fun searchPlaces(
         @Query("token") token: String = WEATHER_TOKEN,
         @Query("lang") lang: String = ZH_CN,

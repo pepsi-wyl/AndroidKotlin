@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.switchMap
-import site.ylan.sunnyweather.date.model.Place
+import site.ylan.sunnyweather.date.model.PlaceResponse.Place
 import site.ylan.sunnyweather.date.Repository
 
 /**

@@ -15,29 +15,29 @@ data class PlaceResponse(
 
     @SerializedName("places")
     val places: List<Place>
-)
+) {
+    data class Place(
+        @SerializedName("id")
+        var id: String,
 
-data class Place(
-    @SerializedName("id")
-    var id: String,
+        @SerializedName("place_id")
+        val placeId: String,
 
-    @SerializedName("place_id")
-    val placeId: String,
+        @SerializedName("name")
+        val name: String,
 
-    @SerializedName("name")
-    val name: String,
+        @SerializedName("location")
+        val location: Location,
 
-    @SerializedName("location")
-    val location: Location,
+        @SerializedName("formatted_address")
+        val address: String
+    ) {
+        data class Location(
+            @SerializedName("lng")
+            val lng: String,
 
-    @SerializedName("formatted_address")
-    val address: String
-)
-
-data class Location(
-    @SerializedName("lng")
-    val lng: String,
-
-    @SerializedName("lat")
-    val lat: String
-)
+            @SerializedName("lat")
+            val lat: String
+        )
+    }
+}
