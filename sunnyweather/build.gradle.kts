@@ -98,4 +98,6 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.jakewharton.threetenabp:threetenabp:1.4.5")
 }

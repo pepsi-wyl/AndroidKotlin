@@ -3,6 +3,7 @@ package site.ylan.sunnyweather
 import android.annotation.SuppressLint
 import android.app.Application
 import android.content.Context
+import com.jakewharton.threetenabp.AndroidThreeTen
 
 /**
  * MainApplication
@@ -26,6 +27,9 @@ class MainApplication : Application() {
 
         // 初始化全局上下文
         initGlobeContext()
+
+        // 初始化AndroidThreeTen
+        AndroidThreeTen.init(this)
     }
 
     /**

@@ -161,17 +161,17 @@ data class DailyResponse(
 
             data class Skycon(
                 @SerializedName("date") val date: String,
-                @SerializedName("value") val max: String,
+                @SerializedName("value") val value: String,
             )
 
             data class Skycon08h20h(
                 @SerializedName("date") val date: String,
-                @SerializedName("value") val max: String,
+                @SerializedName("value") val value: String,
             )
 
             data class Skycon20h32h(
                 @SerializedName("date") val date: String,
-                @SerializedName("value") val max: String,
+                @SerializedName("value") val value: String,
             )
 
             data class LifeIndex(
