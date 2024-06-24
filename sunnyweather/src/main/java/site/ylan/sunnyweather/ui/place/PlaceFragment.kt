@@ -1,6 +1,7 @@
 package site.ylan.sunnyweather.ui.place
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -15,6 +16,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import site.ylan.sunnyweather.MainApplication.Companion.globeContext
 import site.ylan.sunnyweather.databinding.FragmentPlaceBinding
+import site.ylan.sunnyweather.ui.weather.WeatherActivity
 
 /**
  * PlaceFragment
@@ -24,7 +26,7 @@ class PlaceFragment : Fragment() {
 
     private lateinit var binding: FragmentPlaceBinding
 
-    private val viewModel by lazy { ViewModelProvider(this)[PlaceViewModel::class.java] }
+    val viewModel by lazy { ViewModelProvider(this)[PlaceViewModel::class.java] }
 
     private lateinit var bgImageView: ImageView
     private lateinit var searchPlaceEdit: EditText
@@ -45,6 +47,18 @@ class PlaceFragment : Fragment() {
     @Deprecated("Deprecated in Java")
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+
+        if (viewModel.isPlaceSaved()) {
+            val place = viewModel.getSavedPlace()
+            val intent = Intent(context, WeatherActivity::class.java).apply {
+                putExtra("location_lng", place.location.lng)
+                putExtra("location_lat", place.location.lat)
+                putExtra("place_name", place.name)
+            }
+            startActivity(intent)
+            activity?.finish()
+            return
+        }
 
         recyclerView = binding.recyclerView
         searchPlaceEdit = binding.searchPlaceEdit

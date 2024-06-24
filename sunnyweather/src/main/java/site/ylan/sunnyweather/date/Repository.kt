@@ -8,6 +8,7 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 import site.ylan.sunnyweather.common.Constants.OK
 import site.ylan.sunnyweather.common.utils.LogUtil
+import site.ylan.sunnyweather.date.db.PlaceDao
 import site.ylan.sunnyweather.date.model.DailyResponse
 import site.ylan.sunnyweather.date.model.PlaceResponse.Place
 import site.ylan.sunnyweather.date.model.PlaceResponse
@@ -66,4 +67,19 @@ object Repository {
             }
             emit(result)
         }
+
+    /**
+     * savePlace
+     */
+    fun savePlace(place: Place) = PlaceDao.savePlace(place)
+
+    /**
+     * getSavedPlace
+     */
+    fun getSavedPlace() = PlaceDao.getSavedPlace()
+
+    /**
+     * isPlaceSaved
+     */
+    fun isPlaceSaved() = PlaceDao.isPlaceSaved()
 }
