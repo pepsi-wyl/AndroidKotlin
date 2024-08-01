@@ -12,7 +12,7 @@ import kotlin.properties.Delegates
 class FruitActivity : AppCompatActivity() {
 
     companion object {
-        const val FRUIT_NAME = "fruit_name"
+        const val FRUIT_NAME = "fruit_name1"
         const val FRUIT_IMAGE_ID = "fruit_image_id"
         fun startFruitActivity(context: Context, bundle: Bundle) {
             val intent = Intent(context, FruitActivity::class.java)

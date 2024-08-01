@@ -1,5 +1,8 @@
 import java.net.URI
 
+include(":k8-contentprovider")
+
+
 pluginManagement {
     repositories {
         gradlePluginPortal()
