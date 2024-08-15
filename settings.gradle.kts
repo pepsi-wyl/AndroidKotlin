@@ -1,5 +1,8 @@
 import java.net.URI
 
+include(":app:k29-mmkv")
+
+
 include(":k8-contentprovider")
 
 
